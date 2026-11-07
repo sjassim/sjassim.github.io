@@ -20,9 +20,9 @@ Open http://localhost:8000. A local server is required because links and assets 
 
 Root-relative links target a user Pages site or a custom domain. A project Pages site at /repository-name/ needs its paths adjusted.
 
-## Replace image placeholders
+## Portfolio images
 
-The existing logo is included. Portfolio images are local SVG placeholders with descriptive source filenames. `asset-manifest.json` maps every placeholder to its source page, original public image URL and alt text. Replace the corresponding image references in HTML with the supplied final assets. Repeated references can share one asset. Preserve aspect ratios, and add descriptive alt text for meaningful images.
+All 42 portfolio and About image references now use real assets. 24 images were matched from the supplied Site_assets folder; 18 absent files were recovered from the original public Squarespace image URLs. Project-specific folders take precedence over the mixed All_PNG folder when filenames have different versions. `asset-manifest.json` records each page, original URL, local replacement and source. Image files retain their original names.
 
 Local styles and fonts are in assets/. `migration.css` contains standalone overrides; `site.js` controls mobile navigation and the contact form's unconnected state. No build step or package installation is needed.
 
@@ -32,4 +32,4 @@ The form currently validates fields but DOES NOT send messages or save submissio
 
 ## Verification
 
-Checked all 12 page files for internal link and asset targets. Browser checked desktop homepage, mobile homepage, mobile navigation and a case-study page. Image placeholders deliberately differ from the original artwork. Review all final assets and connect the form before switching the live domain.
+Checked all 12 page files for internal link and asset targets. Browser checked the homepage, mobile navigation, and image loading on all nine case studies; every case-study image decoded successfully. All image references were checked against local files. Connect the form before switching the live domain.
