@@ -42,11 +42,21 @@ def build():
         output = ROOT / page['route'].strip('/') / 'index.html'
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text('\n'.join(line.rstrip() for line in render(template, values).splitlines()) + '\n')
-    # Keep old bookmarks working without retaining the removed contact page.
-    redirect = ROOT / 'kontakt/index.html'
-    redirect.parent.mkdir(exist_ok=True)
-    redirect.write_text('<!doctype html>\n<html lang="sv-SE"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url=/"><title>Shervan Jassim</title></head><body><a href="/">Till portfolio</a><script>location.replace("/");</script></body></html>\n')
-    print(f'Built {len(pages)} pages and the old contact-page redirect.')
+    # Keep existing bookmarks and application links working after URL changes.
+    redirects = json.loads((SOURCE / 'redirects.json').read_text())
+    redirect_template = (SOURCE / 'templates/redirect.html').read_text()
+    routes = {page['route'] for page in pages}
+    for old, target in redirects.items():
+        if old in routes or target not in routes:
+            raise ValueError(f'Invalid redirect: {old} -> {target}')
+        output = ROOT / old.strip('/') / 'index.html'
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(render(redirect_template, {
+            'url': html.escape('https://' + domain + target, quote=True),
+            'target': html.escape(target, quote=True),
+            'target_json': json.dumps(target),
+        }))
+    print(f'Built {len(pages)} pages and {len(redirects)} compatibility redirects.')
 
 if __name__ == '__main__':
     build()
