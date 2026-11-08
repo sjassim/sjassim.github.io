@@ -1,0 +1,35 @@
+<article class="case-study case--accessibility">
+<section class="case-section background">
+<div class="case-text">
+<h3>Bakgrund</h3>
+<p class="large">Appen hade tidigare genomgått flera tillgänglighetsförbättringar, men saknade ett sätt att anpassa gränssnittet efter användarens valda textstorlek i iOS och Android. Inför de nya tillgänglighetskraven från EU behövde vårt team möjliggöra textförstoring i apparna. WCAG 2.2 AA utgjorde organisationens målsättning för tillgänglighetsarbetet.</p><p class="large">Min uppgift var att tillsammans med en UI Designer ta fram övergripande riktlinjer för skalbar text och specificera hur appens komponenter skulle bete sig vid olika textstorlekar. Riktlinjerna skulle sedan dokumenteras och användas av samtliga appteam.</p>
+</div>
+</section>
+<section class="case-section principles">
+<figure class="case-figure"><div class="media-frame"><img alt="resize principles" decoding="async" height="900" src="/assets/resize_principles.png" width="1600"/></div></figure>
+</section>
+<section class="case-section research">
+<div class="case-text">
+<h3>Underlag och design principer</h3>
+<p class="large">Eftersom funktionen ännu inte var implementerad saknade vi egen användningsdata. Vi utgick därför från extern data om hur människor använder textinställningarna i iOS och Android. Datat visade att mellan 20-30% avvek från standardinställningarna.</p><p class="large">Utifrån detta definierade vi två nivåer: <br/>Upp till cirka 140 % skulle appen så långt som möjligt behålla samma informationsstruktur och komponentlayout som vid standardstorleken. Syftet var att ge kunderna en förutsägbar och sammanhållen upplevelse utan onödiga förändringar i gränssnittet.</p>
+</div>
+</section>
+<section class="case-section rows">
+<figure class="case-figure"><div class="media-frame"><img alt="resize listrow" decoding="async" height="900" src="/assets/resize_listrow.png" width="1600"/></div><figcaption><p style="text-align:center">Radkomponenten är en  mångsidig komponenterna, vilket ökade komplexiteten för hur beteendet skulle definieras.</p></figcaption></figure>
+</section>
+<section class="case-section scaling">
+<div class="case-text">
+<p class="large">Vid större textstorlekar skulle komponenterna övergå till anpassade layouter, exempelvis genom radbrytning, vertikal placering eller utökad höjd. Där prioriterades enkel tillgång till allt innehåll och funktionalitet framför att bevara den ursprungliga layouten.</p><p class="large">Eftersom vårt designsystem innehöll ett stort antal komponenter, kunde inte allt anpassas samtidigt. För att skapa största möjliga effekt tidigt tog vi fram användningsdata för appens mest besökta vyer och inventerade vilka komponenter de innehöll. Utifrån detta prioriterade vi de komponenter som var viktigast och användes mest.</p>
+</div>
+</section>
+<section class="case-section modal">
+<figure class="case-figure"><div class="media-frame"><img alt="resize modal" decoding="async" height="900" src="/assets/resize_modal.png" width="1600"/></div></figure>
+</section>
+<section class="case-section results">
+<div class="case-text">
+<h3>Resultat</h3>
+<p class="large">Arbetet resulterade i gemensamma riktlinjer och specifikationer som gav appteamen ett underlag för framtida implementation och kvalitetssäkring.</p><p class="large">Efter lanseringen kunde vi för första gången följa hur kunderna faktiskt använde förstoringsfunktionen. Datan visade att 99 % använde en textstorlek under 140%, vilket bekräftade att brytpunkten gav nästan alla kunder en större text utan att i onödan förändra appens informationsstruktur.</p>
+</div>
+</section>
+</article>
+<nav aria-label="Fler projekt" class="project-pagination"><a class="previous" href="/portfolio/navigeringsstruktur/"><small>Föregående</small><span>Navigeringsstruktur - LF</span></a><a class="next" href="/portfolio/sok-kandidater/"><small>Nästa</small><span>Sök kandidater - AF</span></a></nav>

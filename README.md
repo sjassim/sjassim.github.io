@@ -26,6 +26,7 @@ GitHub Pages continues to publish the root of `main`. No hosting configuration c
 | Shared metadata/page shell | `src/templates/page.html` |
 | Page content and sections | `src/pages/*.html` |
 | Titles, descriptions, preview images and routes | `src/pages.json` |
+| Redirects from old public addresses | `src/redirects.json` |
 | Shared typography, spacing, image fitting, responsive styling | `assets/site.css` |
 | Case-study widths, spacing and image proportions | `assets/cases.css` |
 | Local font declarations | `assets/fonts.css` |
@@ -43,7 +44,7 @@ Case-study pages use ordinary document flow. A `case-text` contains a heading an
 
 To add a case study, duplicate a suitable fragment, add its route and metadata to `src/pages.json`, add its card to `src/pages/home.html`, and update neighbouring previous/next links. Rebuild and run the checker.
 
-The old `/kontakt/` address redirects to the homepage. `.nojekyll` and `CNAME` must stay in the repository root. All live preview metadata uses the domain in `CNAME`.
+Case-study public addresses match their source filenames, for example `/portfolio/chattbot/` uses `src/pages/chattbot.html`. The old case-study addresses are retained as small redirect pages generated from `src/redirects.json`. These are browser redirects (JavaScript plus an HTML refresh fallback), with a canonical link to the new address; GitHub Pages does not provide configurable HTTP 301 redirects. Existing query parameters and URL fragments are preserved when JavaScript is available. The old `/kontakt/` address redirects to the homepage. If you rename another route later, keep its old address in the redirect map and point it directly to the new content page. `.nojekyll` and `CNAME` must stay in the repository root. All live preview metadata uses the domain in `CNAME`.
 
 ## Requirements
 
