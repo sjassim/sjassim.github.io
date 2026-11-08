@@ -1,0 +1,158 @@
+/* Case-study composition: widths, spacing and image proportions.
+   Content flows naturally; there are no numbered grid rows or positions. */
+. All sizes are ordinary widths,
+   spacing and image proportions; content flows naturally when text changes. */
+.case--navigation .background .case-text h3 { margin-bottom: 1.25vw; }
+.case--navigation { padding-top: 1.42vw; --mobile-image-height: 184px; padding-bottom: 21.81vw; }
+.case--navigation .background { width: 68.31%; margin-inline-start: 15.84%; margin-top: 0; }
+.case--navigation .role .case-text h3 { margin-bottom: 1.25vw; }
+.case--navigation .role .case-figure .media-frame { aspect-ratio: 1.248; }
+.case--navigation .role .case-split { grid-template-columns: 42.37% 56.78%; column-gap: 0.85%; }
+.case--navigation .role .case-text { padding-top: 3.05vw; }
+.case--navigation .role { width: 79.81%; margin-inline-start: 15.84%; margin-top: 0.62vw; }
+.case--navigation .research .case-text h3 { max-width: 32.67%; margin-bottom: 0.62vw; }
+.case--navigation .research { width: 68.31%; margin-inline-start: 15.84%; margin-top: 5.49vw; }
+.case--navigation .concepts .case-figure figcaption { max-width: 74.40%; margin-top: 0.62vw; }
+.case--navigation .concepts .case-figure .media-frame { aspect-ratio: 1.959; }
+.case--navigation .concepts { width: 91.82%; margin-inline-start: 0%; margin-top: 5.49vw; }
+.case--navigation .decisions .case-text h3 { margin-bottom: 1.25vw; }
+.case--navigation .decisions { width: 68.31%; margin-inline-start: 15.84%; margin-top: 5.44vw; }
+.case--navigation .beta .case-figure figcaption { max-width: 66.42%; margin-top: 0.62vw; }
+.case--navigation .beta .case-figure .media-frame { aspect-ratio: 1.948; }
+.case--navigation .beta { width: 91.31%; margin-inline-start: 4.35%; margin-top: 3.06vw; }
+.case--navigation .results .case-text h3 { margin-bottom: 0.62vw; }
+.case--navigation .results { width: 68.31%; margin-inline-start: 15.84%; margin-top: 4.30vw; }
+.case--navigation .screens .case-figure:nth-child(1) .media-frame { aspect-ratio: 0.476; }
+.case--navigation .screens .case-figure:nth-child(2) .media-frame { aspect-ratio: 0.476; }
+.case--navigation .screens .case-figure:nth-child(3) .media-frame { aspect-ratio: 0.476; }
+.case--navigation .screens .case-figure:nth-child(4) .media-frame { aspect-ratio: 0.476; }
+.case--navigation .screens .case-gallery { grid-template-columns: 0.250fr 0.250fr 0.250fr 0.250fr; gap: 0.62vw; }
+.case--navigation .screens { width: 91.31%; margin-inline-start: 4.35%; margin-top: 3.06vw; }
+.case--balance .background .case-text h3 { margin-bottom: 1.42vw; }
+.case--balance { padding-top: 4.19vw; --mobile-image-height: 184px; padding-bottom: 0.87vw; }
+.case--balance .background { width: 66.44%; margin-inline-start: 16.78%; margin-top: 0; }
+.case--balance .overview .case-figure .media-frame { aspect-ratio: 1.994; }
+.case--balance .overview { width: 100.15%; margin-inline-start: 4.19%; margin-top: 5.83vw; }
+.case--balance .role .case-text h3 { margin-bottom: 1.42vw; }
+.case--balance .role .case-figure figcaption { max-width: 79.67%; margin-top: 0.62vw; }
+.case--balance .role .case-figure .media-frame { aspect-ratio: 0.779; }
+.case--balance .role .case-split { grid-template-columns: 43.94% 55.15%; column-gap: 0.91%; }
+.case--balance .role .case-text { padding-top: 0.79vw; }
+.case--balance .role { width: 74.83%; margin-inline-start: 16.78%; margin-top: 5.83vw; }
+.case--balance .shortcuts .case-text h3 { max-width: 36.86%; margin-bottom: 0.62vw; }
+.case--balance .shortcuts { width: 66.44%; margin-inline-start: 16.78%; margin-top: 2.74vw; }
+.case--balance .results .case-text h3 { margin-bottom: 1.42vw; }
+.case--balance .results { width: 66.44%; margin-inline-start: 16.78%; margin-top: 6.62vw; }
+.case--balance .transfer .case-figure figcaption { max-width: 58.05%; margin-top: 0.62vw; }
+.case--balance .transfer .case-figure .media-frame { aspect-ratio: 1.884; }
+.case--balance .transfer { width: 100.00%; margin-inline-start: 0%; margin-top: 5.83vw; }
+.case--documents .background .case-text h3 { margin-bottom: 1.42vw; }
+.case--documents { padding-top: 4.19vw; --mobile-image-height: 184px; padding-bottom: 8.61vw; }
+.case--documents .background { width: 62.25%; margin-inline-start: 16.78%; margin-top: 0; }
+.case--documents .role .case-text h3 { margin-bottom: 1.42vw; }
+.case--documents .role .case-figure .media-frame { aspect-ratio: 1.835; }
+.case--documents .role .case-split { grid-template-columns: 49.63% 45.05%; column-gap: 5.32%; }
+.case--documents .role .case-figure { padding-top: 1.81vw; }
+.case--documents .role { width: 91.61%; margin-inline-start: 0%; margin-top: 1.42vw; }
+.case--documents .research .case-text h3 { margin-bottom: 1.42vw; }
+.case--documents .research { width: 66.44%; margin-inline-start: 16.78%; margin-top: 6.62vw; }
+.case--documents .journey .case-figure .media-frame { aspect-ratio: 1.990; }
+.case--documents .journey { width: 100.00%; margin-inline-start: 0%; margin-top: 0.96vw; }
+.case--documents .insights .case-text h3 { margin-bottom: 1.42vw; }
+.case--documents .insights { width: 66.44%; margin-inline-start: 16.78%; margin-top: 6.62vw; }
+.case--documents .causes .case-text h3 { margin-bottom: 1.42vw; }
+.case--documents .causes { width: 66.44%; margin-inline-start: 16.78%; margin-top: 4.02vw; }
+.case--documents .findings .case-figure .media-frame { aspect-ratio: 1.990; }
+.case--documents .findings { width: 100.00%; margin-inline-start: 0%; margin-top: 1.04vw; }
+.case--chatbot .background .case-text h3 { margin-bottom: 1.77vw; }
+.case--chatbot .background .case-figure .media-frame { aspect-ratio: 0.652; }
+.case--chatbot .background .case-split { grid-template-columns: 52.07% 36.10%; column-gap: 11.83%; }
+.case--chatbot .background .case-figure { padding-top: 1.93vw; }
+.case--chatbot { padding-top: 4.21vw; --mobile-image-height: 199px; padding-bottom: 3.30vw; }
+.case--chatbot .background { width: 78.97%; margin-inline-start: 16.82%; margin-top: 0; }
+.case--chatbot .conversation .case-figure .media-frame { aspect-ratio: 1.734; }
+.case--chatbot .conversation { width: 100.00%; margin-inline-start: 0%; margin-top: 6.53vw; }
+.case--candidates .background .case-text h3 { margin-bottom: 1.42vw; }
+.case--candidates { padding-top: 4.19vw; --mobile-image-height: 184px; padding-bottom: 6.03vw; }
+.case--candidates .background { width: 62.25%; margin-inline-start: 16.78%; margin-top: 0; }
+.case--candidates .role .case-text h3 { margin-bottom: 1.42vw; }
+.case--candidates .role .case-figure .media-frame { aspect-ratio: 1.241; }
+.case--candidates .role .case-split { grid-template-columns: 46.92% 52.22%; column-gap: 0.86%; }
+.case--candidates .role .case-text { padding-top: 0.79vw; }
+.case--candidates .role { width: 79.03%; margin-inline-start: 16.78%; margin-top: 2.21vw; }
+.case--candidates .research .case-text h3 { margin-bottom: 1.42vw; }
+.case--candidates .research { width: 62.25%; margin-inline-start: 16.78%; margin-top: 4.02vw; }
+.case--candidates .search .case-figure .media-frame { aspect-ratio: 2.569; }
+.case--candidates .search { width: 100.00%; margin-inline-start: 0%; margin-top: 2.37vw; }
+.case--candidates .profiles .case-figure .media-frame { aspect-ratio: 2.569; }
+.case--candidates .profiles { width: 100.00%; margin-inline-start: 0%; margin-top: -1.98vw; }
+.case--candidates .details .case-figure .media-frame { aspect-ratio: 2.569; }
+.case--candidates .details { width: 100.00%; margin-inline-start: 0%; margin-top: 0.62vw; }
+.case--candidates .sketches .case-figure figcaption { max-width: 32.88%; margin-top: 0.62vw; }
+.case--candidates .sketches .case-figure .media-frame { aspect-ratio: 2.569; }
+.case--candidates .sketches { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--candidates .results .case-text h3 { margin-bottom: 1.42vw; }
+.case--candidates .results { width: 66.44%; margin-inline-start: 16.78%; margin-top: 3.53vw; }
+.case--candidates .solution .case-figure .media-frame { aspect-ratio: 1.884; }
+.case--candidates .solution { width: 100.00%; margin-inline-start: 0%; margin-top: 2.05vw; }
+.case--accessibility .background .case-text h3 { margin-bottom: 1.42vw; }
+.case--accessibility { padding-top: 4.19vw; --mobile-image-height: 184px; padding-bottom: 0.80vw; }
+.case--accessibility .background { width: 66.44%; margin-inline-start: 16.78%; margin-top: 0; }
+.case--accessibility .principles .case-figure .media-frame { aspect-ratio: 2.243; }
+.case--accessibility .principles { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--accessibility .research .case-text h3 { max-width: 49.49%; margin-bottom: 0.62vw; }
+.case--accessibility .research { width: 66.44%; margin-inline-start: 16.78%; margin-top: 3.23vw; }
+.case--accessibility .rows .case-figure figcaption { max-width: 49.66%; margin-top: 0.62vw; }
+.case--accessibility .rows .case-figure .media-frame { aspect-ratio: 2.243; }
+.case--accessibility .rows { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--accessibility .scaling { width: 66.44%; margin-inline-start: 16.78%; margin-top: 3.23vw; }
+.case--accessibility .modal .case-figure .media-frame { aspect-ratio: 2.243; }
+.case--accessibility .modal { width: 100.00%; margin-inline-start: 0%; margin-top: 5.83vw; }
+.case--accessibility .results .case-text h3 { margin-bottom: 1.42vw; }
+.case--accessibility .results { width: 66.44%; margin-inline-start: 16.78%; margin-top: 6.62vw; }
+.case--calculator .background .case-text h3 { margin-bottom: 1.77vw; }
+.case--calculator { padding-top: 4.21vw; --mobile-image-height: 199px; padding-bottom: 5.56vw; }
+.case--calculator .background { width: 62.15%; margin-inline-start: 12.62%; margin-top: 0; }
+.case--calculator .role .case-text h3 { margin-bottom: 1.77vw; }
+.case--calculator .role .case-figure .media-frame { aspect-ratio: 0.763; }
+.case--calculator .role .case-split { grid-template-columns: 49.37% 49.38%; column-gap: 1.25%; }
+.case--calculator .role .case-text { padding-top: 0.91vw; }
+.case--calculator .role { width: 74.77%; margin-inline-start: 12.62%; margin-top: 3.70vw; }
+.case--calculator .examples .case-figure:nth-child(1) .media-frame { aspect-ratio: 0.415; }
+.case--calculator .examples .case-figure:nth-child(2) .media-frame { aspect-ratio: 0.502; }
+.case--calculator .examples .case-gallery { grid-template-columns: 0.453fr 0.547fr; gap: 0.86vw; }
+.case--calculator .examples .gallery-caption { max-width: 72.17%; margin-top: 3.70vw; }
+.case--calculator .examples { width: 45.33%; margin-inline-start: 29.44%; margin-top: 6.53vw; }
+.case--employment .background .case-text h3 { margin-bottom: 1.42vw; }
+.case--employment { padding-top: 4.19vw; --mobile-image-height: 184px; padding-bottom: 5.95vw; }
+.case--employment .background { width: 62.25%; margin-inline-start: 16.78%; margin-top: 0; }
+.case--employment .application .case-figure .media-frame { aspect-ratio: 2.109; }
+.case--employment .application { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--employment .support .case-figure .media-frame { aspect-ratio: 2.109; }
+.case--employment .support { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--employment .review .case-figure .media-frame { aspect-ratio: 2.109; }
+.case--employment .review { width: 100.00%; margin-inline-start: 0%; margin-top: 3.23vw; }
+.case--recruitment .background .case-text h3 { margin-bottom: 1.77vw; }
+.case--recruitment .background .case-figure figcaption { max-width: 100.00%; margin-top: 0.86vw; }
+.case--recruitment .background .case-figure .media-frame { aspect-ratio: 0.547; }
+.case--recruitment .background .case-split { grid-template-columns: 54.49% 39.33%; column-gap: 6.18%; }
+.case--recruitment .background .case-text { padding-top: 0.91vw; }
+.case--recruitment { padding-top: 3.30vw; --mobile-image-height: 199px; padding-bottom: 14.62vw; }
+.case--recruitment .background { width: 83.18%; margin-inline-start: 4.21%; margin-top: 0; }
+.case--recruitment .role .case-text h3 { margin-bottom: 1.77vw; }
+.case--recruitment .role .case-figure .media-frame { aspect-ratio: 0.639; }
+.case--recruitment .role .case-split { grid-template-columns: 47.06% 47.06%; column-gap: 5.88%; }
+.case--recruitment .role .case-text { padding-top: 3.75vw; }
+.case--recruitment .role { width: 87.38%; margin-inline-start: 4.21%; margin-top: 0.86vw; }
+@media (max-width: 767px) {
+  .case-study { padding-top: .8vmax; padding-bottom: 24px; }
+  .case--navigation { width: 80%; }
+  .case-study .case-section { width: 100%; margin-inline: 0; margin-top: 24px; }
+  .case-study .case-section:first-child { margin-top: 0; }
+  .case-study .case-section .case-text, .case-study .case-section .case-figure { padding-top: 0; }
+  .case-study .case-section .case-text h3 { max-width: none; margin-bottom: 16px; }
+  .case-study .case-section .case-split, .case-study .case-section .case-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .case-study .case-section .case-split > .case-text { order: -1; }
+  .case-study .case-section .case-figure .media-frame { aspect-ratio: auto; height: var(--mobile-image-height); }
+  .case-study .case-section .case-figure figcaption, .case-study .case-section .gallery-caption { max-width: 100%; margin-top: 8px; }
+}

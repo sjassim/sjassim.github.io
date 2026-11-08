@@ -36,6 +36,8 @@ def check():
                 target /= 'index.html'
             if not target.is_file():
                 errors.append(f'{file.relative_to(ROOT)}: missing {url}')
+        if re.search(r'--(?:area(?:-wide)?|rows(?:-wide)?)\s*:', file.read_text()) or 'class="layout-grid"' in file.read_text():
+            errors.append(f'{file.relative_to(ROOT)}: numbered layout grid remains')
         if re.search(r'class="[^"]*(?:sqs-|fe-block|fluid-engine)', file.read_text()):
             errors.append(f'{file.relative_to(ROOT)}: old editor markup remains')
     for css in (ROOT / 'assets').glob('*.css'):
