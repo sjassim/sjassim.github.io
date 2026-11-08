@@ -1,0 +1,90 @@
+[
+  {
+    "route": "/about/",
+    "file": "about.html",
+    "title": "om mig — Shervan Jassim",
+    "description": "Senior UX/Product Designer med lång erfarenhet av komplexa digitala tjänster för app, webb och interna system. Kombinerar användarinsikter, produktdata och systemtänkande för att s",
+    "image": "/assets/me.png",
+    "kind": "about"
+  },
+  {
+    "route": "/",
+    "file": "home.html",
+    "title": "Shervan Jassim",
+    "description": "Hej! Här hittar du ett urval av case från de senaste tio åren. På grund av sekretessavtal har vissa arbeten förenklats eller utelämnats helt, exempelvis projekt som rör interna sys",
+    "image": "/assets/app_nav_cover.png",
+    "kind": "home"
+  },
+  {
+    "route": "/portfolio/kostnadsrknaren/",
+    "file": "kostnadsrknaren.html",
+    "title": "Kostnadsräknaren - AF — Shervan Jassim",
+    "description": "Det här verktyget utvecklades för Arbetsförmedlingen och hjälper arbetsgivare att uppskatta kostnader och ekonomiskt stöd vid nyanställningar med statligt stöd. Genom att svara på ",
+    "image": "/assets/folio31_B.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/kostnadsrknaren-jzn8r/",
+    "file": "kostnadsrknaren-jzn8r.html",
+    "title": "Chattbot - AF — Shervan Jassim",
+    "description": "För att minska antalet återkommande frågor om att skapa jobbannonser införde Arbetsförmedlingen en digital medarbetare. Chattboten lanserades i december 2018 och vägledde arbetsgiv",
+    "image": "/assets/folio30_B.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/project-four-l3zw3-dk9py-xcmem-e2jgd-wchr9/",
+    "file": "project-four-l3zw3-dk9py-xcmem-e2jgd-wchr9.html",
+    "title": "Navigeringsstruktur - LF — Shervan Jassim",
+    "description": "Sen LF-appen lanserades använde den så kallad hamburgarmeny för navigering. Lösningen gav tillgång till hela utbudet men var utdaterad och gjorde det svårt för kunden att få en öve",
+    "image": "/assets/app_nav_infoarch.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/rekryteringsguiden/",
+    "file": "rekryteringsguiden.html",
+    "title": "Rekryteringsguiden - AF — Shervan Jassim",
+    "description": "Rekryteringsguiden utvecklades för Arbetsförmedlingen som ett vägledande verktyg för arbetsgivare som var osäkra på hur de bäst skulle inleda en rekryteringsprocess. Behovet var sä",
+    "image": "/assets/folio28_B.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/tillgnglighetsanpassning/",
+    "file": "tillgnglighetsanpassning.html",
+    "title": "Tillgänglighetsanpassning - LF — Shervan Jassim",
+    "description": "Appen hade tidigare genomgått flera tillgänglighetsförbättringar, men saknade ett sätt att anpassa gränssnittet efter användarens valda textstorlek i iOS och Android. Inför de nya ",
+    "image": "/assets/resize_principles.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/tillgnglighetsanpassning-jajkh/",
+    "file": "tillgnglighetsanpassning-jajkh.html",
+    "title": "Snabbsaldo - LF — Shervan Jassim",
+    "description": "Snabbsaldo och Snabböverföring gör det möjligt att kontrollera saldot och flytta pengar mellan egna konton utan att logga in.",
+    "image": "/assets/qb_main.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/tillgnglighetsanpassning-jajkh-5sdl8/",
+    "file": "tillgnglighetsanpassning-jajkh-5sdl8.html",
+    "title": "Sök kandidater - AF — Shervan Jassim",
+    "description": "”Sök kandidater” är en söktjänst för kandidater som tillhandahålls av Arbetsförmedlingen. Den befintliga tjänsten fungerade i grunden, men skapade frustration hos användarna. Kandi",
+    "image": "/assets/folio27_B.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/tillgnglighetsanpassning-jajkh-5sdl8-d58lb/",
+    "file": "tillgnglighetsanpassning-jajkh-5sdl8-d58lb.html",
+    "title": "Moderna beredskapsjobb - AF — Shervan Jassim",
+    "description": "Arbetsförmedlingen arbetar med att digitalisera ansökningsprocesser som tidigare varit pappersbaserade. Ett sådant projekt var Moderna beredskapsjobb, ett ekonomiskt stöd till stat",
+    "image": "/assets/folio29_A.png",
+    "kind": "case"
+  },
+  {
+    "route": "/portfolio/tillgnglighetsanpassning-jajkh-5sdl8-p9s9k/",
+    "file": "tillgnglighetsanpassning-jajkh-5sdl8-p9s9k.html",
+    "title": "Dokumenthantering - LF — Shervan Jassim",
+    "description": "Som en del av ett initiativ för en mer sömlös kundupplevelse fick jag i uppdrag att undersöka hur kunder upplevde hanteringen av dokument kopplade till sitt engagemang hos LF.",
+    "image": "/assets/document_plan.png",
+    "kind": "case"
+  }
+]
