@@ -24,9 +24,10 @@ GitHub Pages continues to publish the root of `main`. No hosting configuration c
 | Navigation or header | `src/templates/header.html` |
 | Footer | `src/templates/footer.html` |
 | Shared metadata/page shell | `src/templates/page.html` |
-| Text and image placements | `src/pages/*.html` |
+| Page content and sections | `src/pages/*.html` |
 | Titles, descriptions, preview images and routes | `src/pages.json` |
-| Typography, spacing, image fitting, responsive styling | `assets/site.css` |
+| Shared typography, spacing, image fitting, responsive styling | `assets/site.css` |
+| Case-study widths, spacing and image proportions | `assets/cases.css` |
 | Local font declarations | `assets/fonts.css` |
 | Mobile-menu behaviour | `assets/site.js` |
 
@@ -36,7 +37,9 @@ The root `index.html`, `about/index.html` and `portfolio/*/index.html` files are
 
 Keep images in `assets/` and use root-relative paths such as `/assets/app_nav_cover.png`. Existing image files have not been recompressed or altered. `asset-manifest.json` is a historical record of image provenance; its original Squarespace URLs are not loaded by the website.
 
-Case-study layouts use CSS Grid. Each section specifies its mobile and desktop row counts. Each block has `--area` (mobile) and `--area-wide` (desktop), in the order `row-start / column-start / row-end / column-end`. These positions preserve the existing layouts and do not need editing for small text changes. Review larger content changes at both widths.
+Case-study pages use ordinary document flow. A `case-text` contains a heading and its paragraphs. A `case-split` puts text beside an image on desktop and stacks them on mobile. A `case-gallery` arranges related images in two or four columns on desktop. Each section has a meaningful name such as `background`, `role`, `research` or `results`.
+
+`assets/cases.css` retains each project's existing desktop widths, image proportions and spacing using percentages, padding and margins. There are no numbered grid rows, column coordinates, or per-block layout variables. Text sections can grow naturally when edited. On mobile, related headings and paragraphs stay together; images follow their related text. The homepage introduction and footer are plain centred text, and the thumbnail gallery remains a simple three-column/one-column grid.
 
 To add a case study, duplicate a suitable fragment, add its route and metadata to `src/pages.json`, add its card to `src/pages/home.html`, and update neighbouring previous/next links. Rebuild and run the checker.
 

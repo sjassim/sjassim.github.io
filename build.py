@@ -25,6 +25,7 @@ def build():
             current = ' aria-current="page"' if page['route'] == url else ''
             navigation.append(f'<a href="{url}"{current}>{label}</a>')
         values = {
+            'page_styles': ('<link rel="stylesheet" href="/assets/cases.css?v=' + hashlib.sha256((ROOT / 'assets/cases.css').read_bytes()).hexdigest()[:10] + '">') if page['kind'] == 'case' else '',
             'style_version': hashlib.sha256((ROOT / 'assets/site.css').read_bytes()).hexdigest()[:10],
             'script_version': hashlib.sha256((ROOT / 'assets/site.js').read_bytes()).hexdigest()[:10],
             'font_version': hashlib.sha256((ROOT / 'assets/fonts.css').read_bytes()).hexdigest()[:10],
@@ -40,7 +41,7 @@ def build():
         }
         output = ROOT / page['route'].strip('/') / 'index.html'
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(template, values))
+        output.write_text('\n'.join(line.rstrip() for line in render(template, values).splitlines()) + '\n')
     # Keep old bookmarks working without retaining the removed contact page.
     redirect = ROOT / 'kontakt/index.html'
     redirect.parent.mkdir(exist_ok=True)
